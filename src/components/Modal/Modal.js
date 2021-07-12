@@ -54,6 +54,7 @@ const Modal = (props) => {
         },
       }),
     };
+
     if (checkEmailValidity()) {
       const response = await fetch(
         "https://api.omnisend.com/v3/contacts",
@@ -61,8 +62,11 @@ const Modal = (props) => {
       );
       const data = await response.json();
       console.log(data);
+      alert("Your request has been submitted successfully, we will get in touch!");
+      props.onClose();
     }
     else {
+
         console.error("Entered details are not correct");
     }
   };
