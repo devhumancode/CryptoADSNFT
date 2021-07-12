@@ -15,7 +15,7 @@ const Homepage = props => {
                 Buy your Ad pixels
               </h1>
               <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              It’s time to stop wasting your time and money for not valuable ADS and become the ADLord
               </p>
               <span className="button" onClick={props.onModalOpen}>
                 <CartSvg/>
