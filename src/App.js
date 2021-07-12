@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
+
+import { useState } from 'react';
+
+/* COMPONENTS */
+import Navigation from './components/UI/Navigation';
+import Footer from './components/UI/Footer';
+import Modal from './components/Modal/Modal';
+
+/* PAGES */
+import Homepage from './pages/Homepage';
+import Cookies from './pages/Cookies';
+import Privacy from './pages/Privacy';
+
 
 function App() {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const modalStateHandler = property => {
+    setModalOpen(property);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {modalOpen && <Modal onClose={() => modalStateHandler(false)}/>}
+      <main className="wrapper">
+        <Navigation onModalOpen={() => modalStateHandler(true)}/>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home"/>
+          </Route>
+          <Route path="/home" exact>
+            <Homepage onModalOpen={() => modalStateHandler(true)}/>
+          </Route>
+          <Route path="/users" exact>
+            Users
+          </Route>
+          <Route path="/cookies-policy" exact>
+            <Cookies />
+          </Route>
+          <Route path="/privacy-policy" exact>
+            <Privacy/>
+          </Route>
+        </Switch>
+        <Footer/>
+      </main>
+    </Router>
   );
 }
 
