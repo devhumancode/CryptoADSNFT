@@ -12,11 +12,11 @@ const Navigation = props => {
         </NavLink>
       </div>
       <div className="menu">
-          <NavLink to="/home" activeClassName="active">
+          {/* <NavLink to="/home" activeClassName="active">
               Home
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/asdasd">
-              About
+              Whitepapper
           </NavLink>
           
           <NavLink className="buy" to="#" onClick={props.onModalOpen}>
