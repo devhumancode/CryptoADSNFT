@@ -62,12 +62,12 @@ const Modal = (props) => {
       );
       const data = await response.json();
       console.log(data);
-      alert("Your request has been submitted successfully, we will get in touch!");
+      alert(
+        "Your request has been submitted successfully, we will get in touch!"
+      );
       props.onClose();
-    }
-    else {
-
-        console.error("Entered details are not correct");
+    } else {
+      console.error("Entered details are not correct");
     }
   };
 
@@ -92,6 +92,7 @@ const Modal = (props) => {
         </div>
         <div className="row input">
           <select ref={plan}>
+            <option value="5x5">5 x 5 px</option>
             <option value="10x10">10 x 10 px</option>
             <option value="20x20">20 x 20 px</option>
             <option value="30x30">30 x 30 px</option>
