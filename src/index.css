@@ -1,3 +1,4 @@
+/* Importing mixins for media queries */
 /* Colors */
 html,
 body {
@@ -64,10 +65,22 @@ body {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 959px) {
+  .modal-wrapper .modal .row.button {
+    font: normal normal normal 14px Poppins;
+  }
+}
+
 .modal-wrapper .modal .row span.error {
   font: normal normal normal 12px Poppins;
   color: #ff5500;
   font-style: italic;
+}
+
+@media screen and (max-width: 959px) {
+  .modal-wrapper .modal .row span.error {
+    font: normal normal normal 10px Poppins;
+  }
 }
 
 .modal-wrapper .modal .row.input {
@@ -93,6 +106,12 @@ body {
   color: #000000;
 }
 
+@media screen and (max-width: 959px) {
+  .modal-wrapper .modal .row h1 {
+    font: normal normal normal 18px Poppins;
+  }
+}
+
 .modal-wrapper .modal .row .half {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -100,6 +119,12 @@ body {
   text-align: left;
   font: normal normal normal 16px/20px Poppins;
   letter-spacing: 0px;
+}
+
+@media screen and (max-width: 959px) {
+  .modal-wrapper .modal .row .half {
+    font: normal normal normal 14px Poppins;
+  }
 }
 
 .modal-wrapper .modal .row .half img {
@@ -117,6 +142,12 @@ body {
   font: normal normal bold 14px/20px Poppins;
   letter-spacing: 0px;
   position: relative;
+}
+
+@media screen and (max-width: 959px) {
+  .modal-wrapper .modal .row .half.discount {
+    font: normal normal normal 12px Poppins;
+  }
 }
 
 .modal-wrapper .modal .row .half.discount::before {
@@ -157,12 +188,14 @@ body {
 
 .wrapper {
   font: Poppins;
-  width: 1588px;
+  width: 1500px;
+  max-width: 100%;
   min-height: 1200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 1em;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .wrapper .navigation {
@@ -196,6 +229,12 @@ body {
   color: #000000;
   opacity: 1;
   text-decoration: unset;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper .navigation .menu a {
+    font: normal normal normal 14px Poppins;
+  }
 }
 
 .wrapper .navigation .menu a:last-child {
@@ -249,6 +288,28 @@ body {
   height: fit-content;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box {
+    font: normal normal normal 12px Poppins;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box svg {
+    width: 100%;
+  }
+}
+
 .wrapper .homepage .central-box .content {
   position: absolute;
   top: 0;
@@ -268,6 +329,13 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box .content {
+    font: normal normal normal 36px Poppins;
+    top: 0.5em;
+  }
+}
+
 .wrapper .homepage .central-box .content h1 {
   text-align: center;
   font: normal normal 600 60px/99px Poppins;
@@ -278,12 +346,24 @@ body {
           margin-block-end: 0;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box .content h1 {
+    font: normal normal normal 36px Poppins;
+  }
+}
+
 .wrapper .homepage .central-box .content p {
   text-align: center;
   font: normal normal normal 22px/33px Poppins;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box .content p {
+    font: normal normal normal 16px Poppins;
+  }
 }
 
 .wrapper .homepage .central-box .content span.button {
@@ -306,8 +386,20 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box .content span.button {
+    font: normal normal normal 14px Poppins;
+  }
+}
+
 .wrapper .homepage .central-box .content span.button svg {
   margin-right: 0.5em;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper .homepage .central-box .content span.button svg {
+    width: 1em;
+  }
 }
 
 .wrapper .homepage .central-box .content span.button svg path {
@@ -327,6 +419,13 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .cookies h1,
+  .wrapper .privacy h1 {
+    font: normal normal normal 18px Poppins;
+  }
+}
+
 .wrapper .cookies p,
 .wrapper .privacy p {
   text-align: left;
@@ -334,6 +433,13 @@ body {
   letter-spacing: 0px;
   color: #000;
   line-height: 24px;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper .cookies p,
+  .wrapper .privacy p {
+    font: normal normal normal 12px Poppins;
+  }
 }
 
 .wrapper .cookies b,
@@ -357,6 +463,13 @@ body {
   line-height: 24px;
 }
 
+@media screen and (max-width: 959px) {
+  .wrapper .cookies ul li,
+  .wrapper .privacy ul li {
+    font: normal normal normal 18px Poppins;
+  }
+}
+
 .wrapper footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +487,12 @@ body {
   font: normal normal normal 18px/29px Poppins;
   letter-spacing: 0px;
   color: #acacac;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper footer .side {
+    font: normal normal normal 12px Poppins;
+  }
 }
 
 .wrapper footer .side.menu a {

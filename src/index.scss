@@ -1,3 +1,6 @@
+/* Importing mixins for media queries */
+@import "media-queries.scss";
+
 /* Colors */
 $base-blue: #0099e5;
 $base-white: #fff;
@@ -52,12 +55,20 @@ body {
         letter-spacing: 0px;
         cursor: pointer;
         margin-top: 2em;
+
+        @include mobile {
+          font: normal normal normal 14px Poppins;
+        }
       }
 
       span.error {
         font: normal normal normal 12px Poppins;
         color: $base-red;
         font-style: italic;
+
+        @include mobile {
+          font: normal normal normal 10px Poppins;
+        }
       }
 
       &.input {
@@ -80,6 +91,10 @@ body {
         font: normal normal 600 22px/33px Poppins;
         letter-spacing: 0px;
         color: #000000;
+
+        @include mobile {
+          font: normal normal normal 18px Poppins;
+        }
       }
 
       .half {
@@ -87,6 +102,10 @@ body {
         text-align: left;
         font: normal normal normal 16px/20px Poppins;
         letter-spacing: 0px;
+
+        @include mobile {
+          font: normal normal normal 14px Poppins;
+        }
 
         img {
           max-width: 100%;
@@ -100,6 +119,10 @@ body {
           font: normal normal bold 14px/20px Poppins;
           letter-spacing: 0px;
           position: relative;
+
+          @include mobile {
+            font: normal normal normal 12px Poppins;
+          }
 
           &::before {
               position: absolute;
@@ -136,11 +159,13 @@ body {
 
 .wrapper {
   font: Poppins;
-  width: 1588px;
+  width: 1500px;
+  max-width: 100%;
   min-height: 1200px;
   box-sizing: border-box;
   padding: 0 1em;
   margin: auto;
+  box-sizing: border-box;
 
   .navigation {
     display: flex;
@@ -166,6 +191,10 @@ body {
         color: #000000;
         opacity: 1;
         text-decoration: unset;
+
+        @include mobile {
+          font: normal normal normal 14px Poppins;
+        }
 
         &:last-child {
           margin-right: 0;
@@ -208,6 +237,21 @@ body {
       width: fit-content;
       height: fit-content;
 
+      
+      @include mobile {
+        font: normal normal normal 12px Poppins;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      svg {
+        @include mobile {
+          width: 100%;
+        }
+      }
+
       .background {
       }
 
@@ -221,6 +265,11 @@ body {
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+          font: normal normal normal 36px Poppins;
+          top: 0.5em;
+        }
+
         h1 {
           text-align: center;
           font: normal normal 600 60px/99px Poppins;
@@ -228,6 +277,10 @@ body {
           color: #000000;
           opacity: 1;
           margin-block-end: 0;
+
+          @include mobile {
+            font: normal normal normal 36px Poppins;
+          }
         }
 
         p {
@@ -236,6 +289,10 @@ body {
           letter-spacing: 0px;
           color: #000000;
           opacity: 1;
+
+          @include mobile {
+            font: normal normal normal 16px Poppins;
+          }
         }
 
         span.button {
@@ -251,8 +308,17 @@ body {
           opacity: 1;
           cursor: pointer;
 
+          @include mobile {
+            font: normal normal normal 14px Poppins;
+          }
+
           svg {
             margin-right: 0.5em;
+
+            @include mobile {
+              width: 1em;
+            }
+
             path {
               fill: $base-white;
             }
@@ -273,6 +339,11 @@ body {
       letter-spacing: 0px;
       color: #000000;
       font-weight: bold;
+
+
+      @include mobile {
+        font: normal normal normal 18px Poppins;
+      }
     }
 
     p {
@@ -281,6 +352,10 @@ body {
       letter-spacing: 0px;
       color: $base-black;
       line-height: 24px;
+
+      @include mobile {
+        font: normal normal normal 12px Poppins;
+      }
     }
 
     b {
@@ -299,6 +374,10 @@ body {
         letter-spacing: 0px;
         color: $base-black;
         line-height: 24px;
+
+        @include mobile {
+          font: normal normal normal 18px Poppins;
+        }
       }
     }
   }
@@ -313,6 +392,10 @@ body {
       font: normal normal normal 18px/29px Poppins;
       letter-spacing: 0px;
       color: $base-grey;
+
+      @include mobile {
+        font: normal normal normal 12px Poppins;
+      }
 
       &.menu {
         a {

@@ -16,7 +16,7 @@ const Navigation = props => {
               Home
           </NavLink> */}
           <NavLink to="/asdasd">
-              Whitepapper
+              Whitepaper
           </NavLink>
           
           <NavLink className="buy" to="#" onClick={props.onModalOpen}>
