@@ -1,7 +1,8 @@
 
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/logo.png';
-import cart from '../../assets/cart.svg';
+import logo from "../../assets/logo.png";
+import cart from "../../assets/cart.svg";
+import Whitepaper from "../../assets/files/CryptoAdsNftAdLordpaperV1.pdf";
 
 const Navigation = props => {
   return (
@@ -15,9 +16,9 @@ const Navigation = props => {
           {/* <NavLink to="/home" activeClassName="active">
               Home
           </NavLink> */}
-          <NavLink to="/asdasd">
+          <a href={Whitepaper} download>
               Whitepaper
-          </NavLink>
+          </a>
           
           <NavLink className="buy" to="#" onClick={props.onModalOpen}>
               <img src={cart} />
