@@ -1,8 +1,5 @@
 import {ReactComponent as Cbox} from '../assets/center-box.svg';
-import {ReactComponent as CartSvg} from '../assets/cart.svg'
-import {
-    Link
-  } from "react-router-dom";
+import {ReactComponent as CartSvg} from '../assets/cart.svg';
 
 const Homepage = props => {
 

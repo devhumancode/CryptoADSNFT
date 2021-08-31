@@ -9,7 +9,7 @@ const Navigation = props => {
     <nav className="navigation">
       <div className="logo">
         <NavLink to="">
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
         </NavLink>
       </div>
       <div className="menu">
@@ -21,7 +21,7 @@ const Navigation = props => {
           </a>
           
           <NavLink className="buy" to="#" onClick={props.onModalOpen}>
-              <img src={cart} />
+              <img src={cart} alt="cart"/>
               Buy pixels
           </NavLink>
       </div>

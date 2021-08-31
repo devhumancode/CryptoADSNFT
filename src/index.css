@@ -99,6 +99,28 @@ body {
   border: 1px solid #ff5500;
 }
 
+.modal-wrapper .modal .row.input.paymentlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-wrapper .modal .row.input.paymentlink .copy {
+  padding-top: 8px;
+}
+
+.modal-wrapper .modal .row.input.paymentlink .copy svg {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-wrapper .modal .row.input.paymentlink .copy svg g path {
+  fill: #0099e5;
+}
+
 .modal-wrapper .modal .row h1 {
   text-align: left;
   font: normal normal 600 22px/33px Poppins;
@@ -532,5 +554,23 @@ body {
 
 .mt-1 {
   margin-top: 1em;
+}
+
+.blue {
+  color: #0099e5;
+}
+
+.cross {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(48%, #ffffff), color-stop(50%, #aaa), color-stop(52%, #ffffff));
+  background: linear-gradient(0deg, #ffffff 48%, #aaa 50%, #ffffff 52%);
+}
+
+.bnb {
+  font: normal normal normal 16px/20px Poppins;
+  letter-spacing: 0px;
+}
+
+.bnb.pl-1 {
+  padding-left: 1em;
 }
 /*# sourceMappingURL=index.css.map */

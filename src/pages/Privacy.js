@@ -512,7 +512,7 @@ const Privacy = () => {
                     
                 </p>
                 <p>
-                    For more information, please see the Twitter Privacy Policy at: <a href="http://twitter.com/privacy" target="_blank">http://twitter.com/privacy</a>.
+                    For more information, please see the Twitter Privacy Policy at: <a href="http://twitter.com/privacy" rel="noreferrer" target="_blank">http://twitter.com/privacy</a>.
                     
                 </p>
                 <p><b>VIII. Changes To The Privacy Policy</b></p>
