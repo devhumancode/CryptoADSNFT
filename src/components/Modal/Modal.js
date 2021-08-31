@@ -64,6 +64,7 @@ const Modal = (props) => {
         customProperties: {
           Purchase: plan.current.value,
           Link: link.current.value,
+          Bnb: bnbAddress.current.value,
         },
       }),
     };
